@@ -1,0 +1,31 @@
+
+
+/*=================================
+=            KEYFRAMES            =
+=================================*/
+@keyframes offset{
+	100%{
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes fill-it{
+	100%{
+		fill: #6FBC6D;
+	}
+}
+
+/*=================================
+=            SVG Style           =
+=================================*/
+svg{
+	margin: 2em auto 0;
+	display: block;
+	width: 40%;
+}
+.logo{
+	stroke: #6FBC6D;
+	stroke-width: 2;
+	stroke-dasharray: 810; /*se puede obtener el valor con JS*/
+	stroke-dashoffset: 810;
+	animation: offset 5s linear forwards, fill-it .8s 5s forwards;
+}
